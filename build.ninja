@@ -1,0 +1,6 @@
+flags = -std=c++2a
+
+rule compile
+  command = g++ $flags -o $out $in
+
+build a.out: compile main.cpp
